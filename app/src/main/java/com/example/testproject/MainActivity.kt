@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button_add_user:Button = findViewById(R.id.button_add_user)
+        val button_list_posts:Button = findViewById(R.id.button_list_posts)
+
         button_add_user.setOnClickListener{
             val intent = Intent(this, AddUserActivity::class.java)
             startActivity(intent)
-
         }
     }
 
