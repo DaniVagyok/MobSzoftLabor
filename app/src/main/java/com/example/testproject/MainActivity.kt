@@ -12,9 +12,20 @@ class MainActivity : AppCompatActivity() {
 
         val button_add_user:Button = findViewById(R.id.button_add_user)
         val button_list_posts:Button = findViewById(R.id.button_list_posts)
+        val button_list_users:Button = findViewById(R.id.button_list_users)
 
         button_add_user.setOnClickListener{
             val intent = Intent(this, AddUserActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_list_posts.setOnClickListener{
+            val intent = Intent(this, ListPostsActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_list_users.setOnClickListener{
+            val intent = Intent(this, ListUsersActivity::class.java)
             startActivity(intent)
         }
     }
