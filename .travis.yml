@@ -15,4 +15,3 @@ android:
  - sys-img-armeabi-v7a-android-21
 before_install:
  - yes | sdkmanager "platforms;android-28"
-deploy:
