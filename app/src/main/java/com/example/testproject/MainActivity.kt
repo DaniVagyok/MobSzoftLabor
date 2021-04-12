@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddUserActivity::class.java)
             startActivity(intent)
         }
+
+        button_list_posts.setOnClickListener{
+            val intent = Intent(this, ListPostsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 
