@@ -2,25 +2,15 @@ package io.swagger.client.model
 import java.util.Objects
 import io.swagger.annotations.ApiModel
 import io.swagger.annotations.ApiModelProperty
-import io.swagger.client.model.UserData
+import io.swagger.client.model.UsersAnswerMetaPagination
 import com.google.gson.annotations.SerializedName
 @ApiModel(description = "")
-class User {
+class UsersAnswerMeta {
   /**
  **/
-  @SerializedName("code")
-  @get:ApiModelProperty(required = true, value = "")
-  var code:Long = null
-  /**
- **/
-  @SerializedName("meta")
-  @get:ApiModelProperty(required = true, value = "")
-  var meta:Long = null
-  /**
- **/
-  @SerializedName("data")
+  @SerializedName("pagination")
   @get:ApiModelProperty(value = "")
-  var data:UserData = null
+  var pagination:UsersAnswerMetaPagination = null
   public override fun equals(o:Any):Boolean {
     if (this === o)
     {
@@ -30,20 +20,16 @@ class User {
     {
       return false
     }
-    val user = o as User
-    return (code == user.code &&
-            meta == user.meta &&
-            data == user.data)
+    val usersAnswerMeta = o as UsersAnswerMeta
+    return pagination == usersAnswerMeta.pagination
   }
   public override fun hashCode():Int {
-    return Objects.hash(code, meta, data)
+    return Objects.hash(pagination)
   }
   public override fun toString():String {
     val sb = StringBuilder()
-    sb.append("class User {\n")
-    sb.append(" code: ").append(toIndentedString(code)).append("\n")
-    sb.append(" meta: ").append(toIndentedString(meta)).append("\n")
-    sb.append(" data: ").append(toIndentedString(data)).append("\n")
+    sb.append("class UsersAnswerMeta {\n")
+    sb.append(" pagination: ").append(toIndentedString(pagination)).append("\n")
     sb.append("}")
     return sb.toString()
   }

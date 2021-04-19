@@ -1,0 +1,38 @@
+package io.swagger.client.api
+import io.swagger.client.CollectionFormats.*
+import retrofit2.Call
+import retrofit2.http.*
+import okhttp3.RequestBody
+import io.swagger.client.model.PostsAnswer
+import io.swagger.client.model.Post
+import java.util.ArrayList
+import java.util.HashMap
+interface PostsApi {
+  /**
+ * Returns all Posts
+ *
+ * @return Call<PostsAnswer>
+ */
+  @get:GET("posts")
+  val posts:Call<PostsAnswer>
+  /**
+ * Creates a new Post
+ *
+ * @param body The Post to create
+ * @return Call<Void>
+ */
+  @POST("posts")
+  fun createNewPost(
+    @Body body:Post
+  ):Call<Void>
+  /**
+ * Find a Post by its ID
+ *
+ * @param id ID of the Post to return
+ * @return Call<Post>
+ */
+  @GET("posts/{Id}")
+  fun getPost(
+    @Path("Id") id:Long
+  ):Call<Post>
+}
