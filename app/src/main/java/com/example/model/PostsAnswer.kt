@@ -16,5 +16,5 @@ class PostsAnswer {
   /**
  **/
   @SerializedName("data")
-  var data:List<Post> = ArrayList<Post>()
+  var data:List<PostData> = ArrayList<PostData>()
 }

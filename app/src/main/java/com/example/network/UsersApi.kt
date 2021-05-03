@@ -1,5 +1,5 @@
 package io.swagger.client.api
-import io.swagger.client.CollectionFormats.*
+import io.swagger.client.model.PostsAnswer
 import retrofit2.Call
 import retrofit2.http.*
 import okhttp3.RequestBody
@@ -13,8 +13,8 @@ interface UsersApi {
  *
  * @return Call<UsersAnswer>
  */
-  @get:GET("users")
-  val users:Call<UsersAnswer>
+  @GET("users")
+  fun getUsers():Call<UsersAnswer>
   /**
  * Creates a new User
  *

@@ -16,5 +16,5 @@ class UsersAnswer {
   /**
  **/
   @SerializedName("data")
-  var data:List<User> = ArrayList<User>()
+  var data: ArrayList<UserData> = ArrayList<UserData>()
 }

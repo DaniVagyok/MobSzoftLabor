@@ -1,5 +1,4 @@
 package io.swagger.client.api
-import io.swagger.client.CollectionFormats.*
 import retrofit2.Call
 import retrofit2.http.*
 import okhttp3.RequestBody
@@ -13,8 +12,8 @@ interface PostsApi {
  *
  * @return Call<PostsAnswer>
  */
-  @get:GET("posts")
-  val posts:Call<PostsAnswer>
+  @GET("posts")
+  fun getPosts():Call<PostsAnswer>
   /**
  * Creates a new Post
  *
