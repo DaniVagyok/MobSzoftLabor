@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792771717445",
+    "project_id": "bi-angular-3af71",
+    "storage_bucket": "bi-angular-3af71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792771717445:android:7fb8c875a08e4cdd46762c",
+        "android_client_info": {
+          "package_name": "com.example.testproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792771717445-8p55efmfa40mc3eg8defs35403k6dg9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ojAsRrm1OuYVOPl-GSS1aLSbdqxH2eM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792771717445-8p55efmfa40mc3eg8defs35403k6dg9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,10 @@
 package io.swagger.client.api
-import io.swagger.client.model.PostsAnswer
+import io.swagger.client.model.User
+import io.swagger.client.model.UserData
 import retrofit2.Call
 import retrofit2.http.*
-import okhttp3.RequestBody
 import io.swagger.client.model.UsersAnswer
-import io.swagger.client.model.User
-import java.util.ArrayList
-import java.util.HashMap
+
 interface UsersApi {
   /**
  * Returns all Users
@@ -23,8 +21,9 @@ interface UsersApi {
  */
   @POST("users")
   fun createNewUser(
-    @Body body:User
-  ):Call<Void>
+          @Body body: UserData,
+          @Header("Authorization") token: String
+  ):Call<User>
   /**
  * Deletes a User
  *
@@ -33,6 +32,7 @@ interface UsersApi {
  */
   @DELETE("users/{Id}")
   fun deleteUser(
-    @Path("Id") id:Long
+    @Path("Id") id:Long,
+    @Header("Authorization") token: String
   ):Call<Void>
 }

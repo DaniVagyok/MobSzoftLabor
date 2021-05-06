@@ -4,6 +4,7 @@ import retrofit2.http.*
 import okhttp3.RequestBody
 import io.swagger.client.model.PostsAnswer
 import io.swagger.client.model.Post
+import io.swagger.client.model.PostData
 import java.util.ArrayList
 import java.util.HashMap
 interface PostsApi {
@@ -22,7 +23,7 @@ interface PostsApi {
  */
   @POST("posts")
   fun createNewPost(
-    @Body body:Post
+    @Body body: PostData
   ):Call<Void>
   /**
  * Find a Post by its ID

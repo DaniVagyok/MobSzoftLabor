@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestProject">
-        <activity android:name=".ListUsersActivity"></activity>
+        <activity android:name=".PostActivity"></activity>
+        <activity android:name=".ListUsersActivity" />
         <activity android:name=".ListPostsActivity" />
         <activity android:name=".AddPostActivity" />
         <activity android:name=".AddUserActivity" />
@@ -23,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

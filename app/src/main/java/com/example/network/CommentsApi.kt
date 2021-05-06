@@ -1,10 +1,8 @@
 package io.swagger.client.api
 import retrofit2.Call
 import retrofit2.http.*
-import okhttp3.RequestBody
 import io.swagger.client.model.CommentsAnswer
 import io.swagger.client.model.Comment
-import java.util.ArrayList
 import java.util.HashMap
 interface CommentsApi {
   /**
@@ -13,9 +11,9 @@ interface CommentsApi {
  * @param id ID of the Post to return
  * @return Call<CommentsAnswer>
  */
-  @GET("posts/{Id}/comment")
+  @GET("posts/{Id}/comments")
   fun getComments(
-    @Path("Id") id:Long
+    @Path("Id") id: Long?
   ):Call<CommentsAnswer>
   /**
  * Creates a new Comment

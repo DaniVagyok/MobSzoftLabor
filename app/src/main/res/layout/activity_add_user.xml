@@ -17,39 +17,65 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Felhasználónév"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/userEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="E-mail cím"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="@+id/userGender"
+        app:layout_constraintTop_toBottomOf="@+id/userGender"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
         android:text="Létrehozás"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/userStatus"
+        app:layout_constraintTop_toBottomOf="@+id/userStatus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
